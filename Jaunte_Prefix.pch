@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Jaunte' target in the 'Jaunte' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
