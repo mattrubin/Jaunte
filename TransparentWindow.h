@@ -10,7 +10,7 @@
 
 
 @interface TransparentWindow : NSWindow {
-
+    NSPoint initialLocation;
 }
 
 @end
