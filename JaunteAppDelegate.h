@@ -7,10 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "TransparentWindow.h"
 
 @interface JaunteAppDelegate : NSObject <NSApplicationDelegate> {
     NSStatusItem *statusItem;
 	IBOutlet NSMenu *statusMenu;
+	IBOutlet TransparentWindow *jaunteWindow;
 }
+
+- (IBAction)jaunte:(id)sender;
+- (void)showJaunteWindow;
 
 @end

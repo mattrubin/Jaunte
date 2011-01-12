@@ -13,6 +13,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		C973A46712DD831E00E6FA0F /* TransparentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C973A46612DD831D00E6FA0F /* TransparentWindow.m */; };
+		C973A55612DE4DA000E6FA0F /* RoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C973A55412DE4DA000E6FA0F /* RoundedView.m */; };
 		C9F7AFCD12DD26FC000286EF /* MenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F7AFCC12DD26FC000286EF /* MenuIcon.png */; };
 		C9F7AFE712DD2D31000286EF /* IconHover.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F7AFE612DD2D31000286EF /* IconHover.png */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,8 @@
 		8D1107320486CEB800E47090 /* Jaunte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jaunte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C973A46512DD831D00E6FA0F /* TransparentWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentWindow.h; sourceTree = "<group>"; };
 		C973A46612DD831D00E6FA0F /* TransparentWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentWindow.m; sourceTree = "<group>"; };
+		C973A55412DE4DA000E6FA0F /* RoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedView.m; sourceTree = "<group>"; };
+		C973A55512DE4DA000E6FA0F /* RoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedView.h; sourceTree = "<group>"; };
 		C9F7AFCC12DD26FC000286EF /* MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MenuIcon.png; path = Images/MenuIcon.png; sourceTree = "<group>"; };
 		C9F7AFE612DD2D31000286EF /* IconHover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconHover.png; path = Images/IconHover.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +56,8 @@
 			children = (
 				256AC3D80F4B6AC300CF3369 /* JaunteAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* JaunteAppDelegate.m */,
+				C973A55412DE4DA000E6FA0F /* RoundedView.m */,
+				C973A55512DE4DA000E6FA0F /* RoundedView.h */,
 				C973A46512DD831D00E6FA0F /* TransparentWindow.h */,
 				C973A46612DD831D00E6FA0F /* TransparentWindow.m */,
 			);
@@ -187,6 +192,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* JaunteAppDelegate.m in Sources */,
 				C973A46712DD831E00E6FA0F /* TransparentWindow.m in Sources */,
+				C973A55612DE4DA000E6FA0F /* RoundedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
