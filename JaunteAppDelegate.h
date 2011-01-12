@@ -9,9 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface JaunteAppDelegate : NSObject <NSApplicationDelegate> {
-    NSWindow *window;
+    NSStatusItem *statusItem;
+	IBOutlet NSMenu *statusMenu;
 }
-
-@property (assign) IBOutlet NSWindow *window;
 
 @end
