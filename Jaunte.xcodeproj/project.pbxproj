@@ -14,6 +14,7 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		C973A46712DD831E00E6FA0F /* TransparentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C973A46612DD831D00E6FA0F /* TransparentWindow.m */; };
 		C973A55612DE4DA000E6FA0F /* RoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C973A55412DE4DA000E6FA0F /* RoundedView.m */; };
+		C973A76C12DE718200E6FA0F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C973A76B12DE718200E6FA0F /* Carbon.framework */; };
 		C9F7AFCD12DD26FC000286EF /* MenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F7AFCC12DD26FC000286EF /* MenuIcon.png */; };
 		C9F7AFE712DD2D31000286EF /* IconHover.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F7AFE612DD2D31000286EF /* IconHover.png */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		C973A46612DD831D00E6FA0F /* TransparentWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentWindow.m; sourceTree = "<group>"; };
 		C973A55412DE4DA000E6FA0F /* RoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedView.m; sourceTree = "<group>"; };
 		C973A55512DE4DA000E6FA0F /* RoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedView.h; sourceTree = "<group>"; };
+		C973A76B12DE718200E6FA0F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		C9F7AFCC12DD26FC000286EF /* MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MenuIcon.png; path = Images/MenuIcon.png; sourceTree = "<group>"; };
 		C9F7AFE612DD2D31000286EF /* IconHover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconHover.png; path = Images/IconHover.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				C973A76C12DE718200E6FA0F /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				C973A76B12DE718200E6FA0F /* Carbon.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -231,7 +235,10 @@
 				GCC_PREFIX_HEADER = Jaunte_Prefix.pch;
 				INFOPLIST_FILE = "Jaunte-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
 				PRODUCT_NAME = Jaunte;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -245,7 +252,10 @@
 				GCC_PREFIX_HEADER = Jaunte_Prefix.pch;
 				INFOPLIST_FILE = "Jaunte-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
 				PRODUCT_NAME = Jaunte;
+				SDKROOT = "";
 			};
 			name = Release;
 		};

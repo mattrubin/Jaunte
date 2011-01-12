@@ -7,6 +7,16 @@
 //
 
 #import "JaunteAppDelegate.h"
+#import <Carbon/Carbon.h>
+
+OSStatus HotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,
+						 void *userData)
+{
+	//Do something once the key is pressed
+	[[NSApp delegate] jaunte:nil];
+	return noErr;
+}
+
 
 @implementation JaunteAppDelegate
 
@@ -32,6 +42,26 @@
 	
 	//Show the Jaunt window at launch?
 	[self showJaunteWindow];
+	
+	[self registerHotkey];
+}
+
+- (void)registerHotkey {
+	//Register the Hotkeys
+	EventHotKeyRef gMyHotKeyRef;
+	EventHotKeyID gMyHotKeyID;
+	EventTypeSpec eventType;
+	eventType.eventClass=kEventClassKeyboard;
+	eventType.eventKind=kEventHotKeyPressed;
+
+	InstallApplicationEventHandler(&HotKeyHandler,1,&eventType,NULL,NULL);
+
+	gMyHotKeyID.signature='htk1';
+	gMyHotKeyID.id=1;
+
+	RegisterEventHotKey(49, controlKey, gMyHotKeyID,
+						GetApplicationEventTarget(), 0, &gMyHotKeyRef);
+
 }
 
 

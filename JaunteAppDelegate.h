@@ -15,6 +15,8 @@
 	IBOutlet TransparentWindow *jaunteWindow;
 }
 
+- (void)registerHotkey;
+
 - (IBAction)jaunte:(id)sender;
 - (void)showJaunteWindow;
 
