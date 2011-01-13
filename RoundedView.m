@@ -14,8 +14,8 @@
 
 - (void)drawRect:(NSRect)rect
 {
-	[self drawRoundedRect:self.frame withRadius:12.0 color:[NSColor colorWithCalibratedWhite:0.0 alpha:0.35]];
-	[self drawRoundedRect:[self shrinkNSRect:self.frame by:7.0] withRadius:5.0 color:[NSColor colorWithCalibratedWhite:0.98 alpha:1.0]];
+	[self drawRoundedRect:self.frame withRadius:13.0 color:[NSColor colorWithCalibratedWhite:0.0 alpha:0.35]];
+	[self drawRoundedRect:[self shrinkNSRect:self.frame by:8.0] withRadius:6.0 color:[NSColor colorWithCalibratedWhite:0.98 alpha:1.0]];
 }
 
 - (void)drawRoundedRect:(NSRect)rect withRadius:(float)radius color:(NSColor*)color {
